@@ -1,6 +1,6 @@
 {
   "name": "electron-macos-space-listener",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build:napi": "node -e \"process.env.PROJECT_DIR = process.cwd(); require('child_process').execSync('node-gyp configure --directory src/native && node-gyp build --directory src/native', { stdio: 'inherit' })\"",
     "build:tsc": "tsc",
     "build": "mkdir -p dist && pnpm run build:lib && pnpm run build:napi && pnpm run build:tsc",
-    "postinstall": "pnpm run build"
+    "postinstall": "mkdir -p dist && pnpm run build:lib && pnpm run build:napi"
   },
   "keywords": [],
   "author": "",
