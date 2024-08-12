@@ -13,7 +13,6 @@ var appDelegate: AppDelegate?
 
 @_cdecl("startSpaceChangeListener")
 public func startSpaceChangeListener(_ cb: @escaping @convention(c) () -> Void) {
-    print("startSpaceChangeListener")
     callback = cb
     appDelegate = AppDelegate()
 
@@ -31,7 +30,6 @@ public func startSpaceChangeListener(_ cb: @escaping @convention(c) () -> Void) 
 
     // Keep the run loop running to listen for notifications
     DispatchQueue.global().async {
-        print("DispatchQueue.global().async")
         RunLoop.current.run()
     }
 }
