@@ -20,5 +20,13 @@
   },
   "devDependencies": {
     "@types/node": "^22.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dannyaziz/electron-macos-space-listener.git"
+  },
+  "homepage": "https://github.com/dannyaziz/electron-macos-space-listener#readme",
+  "bugs": {
+    "url": "https://github.com/dannyaziz/electron-macos-space-listener/issues"
   }
 }
