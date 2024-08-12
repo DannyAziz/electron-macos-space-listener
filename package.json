@@ -1,8 +1,9 @@
 {
   "name": "electron-macos-space-listener",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "build:lib": "cd src/native/ && swiftc -emit-library -o ../../dist/SpaceChangeListener.dylib SpaceChangeListener.swift && install_name_tool -id '@rpath/SpaceChangeListener.dylib' ../../dist/SpaceChangeListener.dylib",
     "build:napi": "node -e \"process.env.PROJECT_DIR = process.cwd(); require('child_process').execSync('node-gyp configure --directory src/native && node-gyp build --directory src/native', { stdio: 'inherit' })\"",

@@ -15,7 +15,10 @@
     /* Type Checking */
     "strict": true /* Enable all strict type-checking options. */,
 
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+
+    /* Declaration Files */
+    "declaration": true /* Generate .d.ts files alongside JavaScript files. */
   },
   "include": ["src/**/*"]
 }
